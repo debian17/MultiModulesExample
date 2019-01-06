@@ -7,7 +7,7 @@ ext.versions = [
 
         kotlin           : '1.3.11',
 
-        multidex         : '1.0.3',
+        multidex         : '2.0.0',
 
         androidX         : '1.0.0',
         constraintLayout : '1.1.2',
@@ -41,7 +41,7 @@ ext.libraries = [
 
         cicerone             : "ru.terrakok.cicerone:cicerone:$versions.cicerone",
 
-        multidex             : "com.android.support:multidex:$versions.multidex",
+        multidex             : "androidx.multidex:multidex:$versions.multidex",
 
         location             : "com.google.android.gms:play-services-location:$versions.location",
 
