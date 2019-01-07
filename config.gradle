@@ -26,6 +26,11 @@ ext.versions = [
 ]
 
 ext.libraries = [
+
+        kotlin               : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin",
+
+        multidex             : "androidx.multidex:multidex:$versions.multidex",
+
         appCompat            : "androidx.appcompat:appcompat:$versions.androidX",
         constraintLayout     : "androidx.constraintlayout:constraintlayout:$versions.constraintLayout",
 
@@ -40,8 +45,6 @@ ext.libraries = [
         daggerCompiler       : "com.google.dagger:dagger-compiler:$versions.dagger",
 
         cicerone             : "ru.terrakok.cicerone:cicerone:$versions.cicerone",
-
-        multidex             : "androidx.multidex:multidex:$versions.multidex",
 
         location             : "com.google.android.gms:play-services-location:$versions.location",
 
