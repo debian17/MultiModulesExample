@@ -2,8 +2,6 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 
-apply plugin: 'kotlin-android-extensions'
-
 android {
     compileSdkVersion versions.compileSdkVersion
     defaultConfig {
@@ -24,14 +22,12 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(path: ':domain')
     implementation libraries.kotlin
 
     implementation libraries.multidex
 
     implementation libraries.appCompat
     implementation libraries.constraintLayout
-
-    implementation project(':domain')
 
 }
